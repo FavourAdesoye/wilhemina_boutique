@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;600;700&display=swap');
+
+.col{
+margin-left: 20px;
+margin-top: 35px;
+}
+.row{
+    margin-top: 10px;
+}
+
+
+.card-text .btn{
+    font-size: medium;
+    color: azure;
+    background-color: rgb(66, 66, 142);
+    margin-bottom: 15px;
+    justify-content: right;
+}
+
+ #socials{
+
+    display: flex;
+    
+    align-items: center;
+    padding-top: 20px;
+    justify-content:space-between;
+    
+}
+
+ #socials i{
+
+    font-size: 20px;
+    transition: all .7s ease;
+    color: var(--current-color2);
+}

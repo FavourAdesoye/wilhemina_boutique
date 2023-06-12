@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends 'products\base.html' %} {% block content%} {% load static %}
+<link rel="stylesheet" href="{% static 'styles.css' %}" />
+<link rel="stylesheet" href="{% static 'css\clothview.css' %}" />
+<h1>THIS IS OUR CLOTHING SECTION!</h1>
+
+<div class="row">
+  {% for i in clothings %}
+  <div class="col">
+    <div class="card" style="width: 18rem; height: 30rem">
+      <img
+        src="{{ i.product_image.url }}"
+        class="card-img-top"
+        style="height: 70%"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{ i.title }}</h5>
+        <p class="card-text">{{i.description}}</p>
+        <p class="card-text">price: {{i.price}}</p>
+        <a href="#" class="btn btn-primary">Add to Cart</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

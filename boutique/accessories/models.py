@@ -7,4 +7,7 @@ class Accessorie(models.Model):
     title = models.CharField(max_length=250)
     stock = models.IntegerField()
     price = models.FloatField()
-    cvr_url = models.CharField(max_length=2048)
+    product_image = models.ImageField(
+        upload_to='media/images/', default='blank')
+
+    description = models.TextField(blank=True)

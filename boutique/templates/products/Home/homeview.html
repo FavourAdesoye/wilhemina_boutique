@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+{% extends 'products\base.html' %} {%block content%} {% load static %}
+<link rel="stylesheet" href="{% static 'css\styles.css' %}" />
+<link rel="stylesheet" href="{% static 'css\homeview.css' %}" />
+<script
+  src="https://kit.fontawesome.com/7c97071ea6.js"
+  crossorigin="anonymous"
+></script>
+
+<div class="banner">
+  <img src="{% static 'images\wilhemina logo 3.JPG' %}" alt="" />
+</div>
+  <!--<button type="button" class="btn" id="btn-1">
+    <span class="hovertext" data-hover="Click to see our bestsellers"
+      >Bags</span
+    >
+  </button>
+  <button class="btn-2">
+    <span class="hovertext" data-hover="Click to see our bestsellers"
+      >Clothes</span
+    >
+  </button>
+  <button class="btn-3">
+    <span class="hovertext" data-hover="Click to see our bestsellers"
+      >Accessories</span
+    >
+  </button>
+  <br />
+  <br />
+</div>-->
+  <!--code for carousle begins-->
+  <section class="product"> 
+    <h2 class="product-category">best selling</h2>
+    <button class="pre-btn"><i class="fa-solid fa-arrow-right"></i></button>
+    <button class="nxt-btn"><i class="fa-solid fa-arrow-right"></i></button>
+    <div class="product-container">
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">50% off</span>
+                <img src="{% static 'images\bags\bag-1b.jpg' %}" class="product-thumb" alt="">
+                <button class="card-btn">Buy now</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">brand</h2>
+                <p class="product-short-description">a short line about the cloth..</p>
+                <span class="price">$20</span><span class="actual-price">$40</span>
+                <div class="socials">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-regular fa-bookmark"></i>
+                  
+                </div>
+            </div>
+
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">50% off</span>
+                <img src="{% static 'images\bags\bag-4a.jpg' %}" class="product-thumb" alt="">
+                <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">brand</h2>
+                <p class="product-short-description">a short line about the cloth..</p>
+                <span class="price">$20</span><span class="actual-price">$40</span>
+            </div>
+            <div class="socials">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-bookmark"></i>
+              
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">50% off</span>
+                <img src="{% static 'images\clothes\cloth-1a.jpg' %}" class="product-thumb" alt="">
+                <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">brand</h2>
+                <p class="product-short-description">a short line about the cloth..</p>
+                <span class="price">$20</span><span class="actual-price">$40</span>
+            </div>
+            <div class="socials">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-bookmark"></i>
+              
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">50% off</span>
+                <img src="{% static 'images\clothes\cloth-4a.jpg' %}" class="product-thumb" alt="">
+                <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">brand</h2>
+                <p class="product-short-description">a short line about the cloth..</p>
+                <span class="price">$20</span><span class="actual-price">$40</span>
+            </div>
+            <div class="socials">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-bookmark"></i>
+              
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">50% off</span>
+                <img src="{% static 'images\bags\bag-6.jpg' %}" class="product-thumb" alt="">
+                <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">brand</h2>
+                <p class="product-short-description">a short line about the cloth..</p>
+                <span class="price">$20</span><span class="actual-price">$40</span>
+            </div>
+            <div class="socials">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-bookmark"></i>
+              
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">50% off</span>
+                <img src="{% static 'images\bags\bag-4a.jpg' %}" class="product-thumb" alt="">
+                <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">brand</h2>
+                <p class="product-short-description">a short line about the cloth..</p>
+                <span class="price">$20</span><span class="actual-price">$40</span>
+            </div>
+            <div class="socials">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-bookmark"></i>
+              
+            </div>
+  
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">50% off</span>
+                <img src="{% static 'images\clothes\cloth-3a.jpg' %}" class="product-thumb" alt="">
+                <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">brand</h2>
+                <p class="product-short-description">a short line about the cloth..</p>
+                <span class="price">$20</span><span class="actual-price">$40</span>
+            </div>
+            <div class="socials">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-bookmark"></i>
+              
+            </div>
+        </div>
+   
+      
+                   </div>
+    
+</section>
+
+  <!--CODE FOR THE pop up BEGINS -->
+  <!--
+  <div class="popup">
+    <input type="radio" name="slider" class="d-none" id="s1" checked />
+    <input type="radio" name="slider" class="d-none" id="s2" />
+    <input type="radio" name="slider" class="d-none" id="s3" />
+    <input type="radio" name="slider" class="d-none" id="s4" />
+    <input type="radio" name="slider" class="d-none" id="s5" />
+    <div class="close"><i class="fa-solid fa-circle-xmark"></i></div>
+    <div class="cards">
+      <label for="s1" id="slide1">
+        <div class="card">
+          <div class="image">
+            <img src="{% static 'images\bags\20220603_112738.jpg' %}" alt="" />
+            <div class="dots">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="infos">
+            <span class="name">Nike SuperRep Go</span>
+            <span class="lorem"
+              >Lorem ipsum dolor sit amet, sit amet adipiscing elit. Aenean vel
+              ansd . Nullam lorem. Nulla eu sodales</span
+            >
+          </div>
+          <a href="/contact" class="btn-contact">details</a>
+          <div class="socials">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-bookmark"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+          </div>
+        </div>
+      </label>
+
+      <label for="s2" id="slide2">
+        <div class="card">
+          <div class="image">
+            <img src="{% static 'images\bags\20220603_112742.jpg' %}" alt="" />
+            <div class="dots">
+              <div class="dot1"></div>
+              <div class="dot2"></div>
+              <div class="dot3"></div>
+            </div>
+          </div>
+          <div class="infos">
+            <span class="name">Free Run Flyknit</span>
+            <span class="lorem"
+              >Lorem ipsum dolor sit, adipiscing elit. Aenean vel sit ansd .
+              Nullam lorem. Nulla eu sodales karma stellus</span
+            >
+          </div>
+          <a href="/contact" class="btn-contact">details</a>
+          <div class="socials">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-bookmark"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+          </div>
+        </div>
+      </label>
+
+      <label for="s3" id="slide3">
+        <div class="card">
+          <div class="image">
+            <img src="{% static 'images\bags\20220603_112756.jpg' %}" alt="" />
+            <div class="dots">
+              <div class="dot1"></div>
+              <div class="dot2"></div>
+              <div class="dot3"></div>
+            </div>
+          </div>
+          <div class="infos">
+            <span class="name">Black Toe Union</span>
+            <span class="lorem"
+              >Lorem ipsum dolor, sit amet let kar adipiscing. Aenean vel velit
+              sit ansd . Nullam lorem. Nulla karma stellus</span
+            >
+          </div>
+          <a href="/contact" class="btn-contact">details</a>
+          <div class="socials">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-bookmark"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+          </div>
+        </div>
+      </label>
+
+      <label for="s4" id="slide4">
+        <div class="card">
+          <div class="image">
+            <img src="{% static 'images\bags\20220603_112947.jpg' %}" alt="" />
+            <div class="dots">
+              <div class="dot1"></div>
+              <div class="dot2"></div>
+              <div class="dot3"></div>
+            </div>
+          </div>
+          <div class="infos">
+            <span class="name">Retro High Og</span>
+            <span class="lorem"
+              >Lorem ipsum dolor sit, sit amet elit. Aenean sit amet sit amet
+              vel velit sit ansd. Nulla eu sodales stellus</span
+            >
+          </div>
+          <a href="/contact" class="btn-contact">details</a>
+          <div class="socials">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-bookmark"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+          </div>
+        </div>
+      </label>
+
+      <label for="s5" id="slide5">
+        <div class="card">
+          <div class="image">
+            <img src="{% static 'images\bags\20220603_112953.jpg' %}" alt="" />
+            <div class="dots">
+              <div class="dot1"></div>
+              <div class="dot2"></div>
+              <div class="dot3"></div>
+            </div>
+          </div>
+          <div class="infos">
+            <span class="name">Off-White Air Jordan</span>
+            <span class="lorem"
+              >Lorem ipsum sit amet, sit amet elit. Aenean vel velit ansd .
+              Nullam lorem. Nulla eu sodales stellus</span
+            >
+          </div>
+          <a href="/contact" class="btn-contact">details</a>
+          <div class="socials">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-bookmark"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+          </div>
+        </div>
+      </label>
+    </div>
+  </div>
+</div>
+-->
+  <script src="{% static 'js\main.js' %}"></script>
+  {% endblock %}
+</div>

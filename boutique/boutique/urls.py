@@ -19,9 +19,11 @@ from django.urls import path
 from django.urls import include
 from .views import homeview
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
-    path('', homeview),
+    path('home/', homeview),
     path('admin/', admin.site.urls),
     path('clothing/', include('products.urls')),
     path('accessories/', include('accessories.urls')),
@@ -29,3 +31,7 @@ urlpatterns = [
 ]
 
 urlpatterns += staticfiles_urlpatterns()
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL,
+                          document_root=settings.MEDIA_ROOT)
